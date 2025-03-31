@@ -2,7 +2,7 @@
 -- Random fake error messages to spook players, plus bizarre, funny effects for 10 seconds!
 
 minetest.register_globalstep(function(dtime)
-    if math.random(1, 400) == 1 then -- Roughly every 20-40 seconds
+    if math.random(1, 600) == 1 then -- Roughly every 20-40 seconds
         for _, player in ipairs(minetest.get_connected_players()) do
             local name = player:get_player_name()
             local messages = {
